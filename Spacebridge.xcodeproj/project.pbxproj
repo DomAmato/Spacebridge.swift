@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F141D25A237A0B45004F5250 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F141D259237A0B45004F5250 /* AppDelegate.swift */; };
+		F141D25C237A0B45004F5250 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F141D25B237A0B45004F5250 /* ViewController.swift */; };
+		F141D25E237A0B4A004F5250 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F141D25D237A0B4A004F5250 /* Assets.xcassets */; };
+		F141D26D237A0B4B004F5250 /* SpacebridgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F141D26C237A0B4B004F5250 /* SpacebridgeTests.swift */; };
+		F141D278237A0B4B004F5250 /* SpacebridgeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F141D277237A0B4B004F5250 /* SpacebridgeUITests.swift */; };
+		F141D28C237A0CC6004F5250 /* PortForwarder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F141D28A237A0CC5004F5250 /* PortForwarder.swift */; };
+		F141D28D237A0CC6004F5250 /* KeyGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F141D28B237A0CC6004F5250 /* KeyGen.swift */; };
+		F141D293237A0DDE004F5250 /* Socket in Frameworks */ = {isa = PBXBuildFile; productRef = F141D292237A0DDE004F5250 /* Socket */; };
+		F141D298237A118A004F5250 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F141D296237A118A004F5250 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F141D269237A0B4B004F5250 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F141D24E237A0B45004F5250 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F141D255237A0B45004F5250;
+			remoteInfo = Spacebridge;
+		};
+		F141D274237A0B4B004F5250 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F141D24E237A0B45004F5250 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F141D255237A0B45004F5250;
+			remoteInfo = Spacebridge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F141D256237A0B45004F5250 /* Spacebridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spacebridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F141D259237A0B45004F5250 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F141D25B237A0B45004F5250 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F141D25D237A0B4A004F5250 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F141D262237A0B4A004F5250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F141D268237A0B4B004F5250 /* SpacebridgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpacebridgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F141D26C237A0B4B004F5250 /* SpacebridgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacebridgeTests.swift; sourceTree = "<group>"; };
+		F141D26E237A0B4B004F5250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F141D273237A0B4B004F5250 /* SpacebridgeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpacebridgeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F141D277237A0B4B004F5250 /* SpacebridgeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacebridgeUITests.swift; sourceTree = "<group>"; };
+		F141D279237A0B4B004F5250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F141D28A237A0CC5004F5250 /* PortForwarder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortForwarder.swift; sourceTree = "<group>"; };
+		F141D28B237A0CC6004F5250 /* KeyGen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyGen.swift; sourceTree = "<group>"; };
+		F141D290237A0D9C004F5250 /* Spacebridge.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Spacebridge.entitlements; sourceTree = "<group>"; };
+		F141D297237A118A004F5250 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F141D253237A0B45004F5250 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F141D293237A0DDE004F5250 /* Socket in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F141D265237A0B4B004F5250 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F141D270237A0B4B004F5250 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F141D24D237A0B45004F5250 = {
+			isa = PBXGroup;
+			children = (
+				F141D258237A0B45004F5250 /* Spacebridge */,
+				F141D26B237A0B4B004F5250 /* SpacebridgeTests */,
+				F141D276237A0B4B004F5250 /* SpacebridgeUITests */,
+				F141D257237A0B45004F5250 /* Products */,
+				F141D286237A0BAE004F5250 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F141D257237A0B45004F5250 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F141D256237A0B45004F5250 /* Spacebridge.app */,
+				F141D268237A0B4B004F5250 /* SpacebridgeTests.xctest */,
+				F141D273237A0B4B004F5250 /* SpacebridgeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F141D258237A0B45004F5250 /* Spacebridge */ = {
+			isa = PBXGroup;
+			children = (
+				F141D290237A0D9C004F5250 /* Spacebridge.entitlements */,
+				F141D289237A0BE4004F5250 /* Resources */,
+				F141D259237A0B45004F5250 /* AppDelegate.swift */,
+				F141D25B237A0B45004F5250 /* ViewController.swift */,
+				F141D28B237A0CC6004F5250 /* KeyGen.swift */,
+				F141D28A237A0CC5004F5250 /* PortForwarder.swift */,
+				F141D262237A0B4A004F5250 /* Info.plist */,
+			);
+			path = Spacebridge;
+			sourceTree = "<group>";
+		};
+		F141D26B237A0B4B004F5250 /* SpacebridgeTests */ = {
+			isa = PBXGroup;
+			children = (
+				F141D26C237A0B4B004F5250 /* SpacebridgeTests.swift */,
+				F141D26E237A0B4B004F5250 /* Info.plist */,
+			);
+			path = SpacebridgeTests;
+			sourceTree = "<group>";
+		};
+		F141D276237A0B4B004F5250 /* SpacebridgeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F141D277237A0B4B004F5250 /* SpacebridgeUITests.swift */,
+				F141D279237A0B4B004F5250 /* Info.plist */,
+			);
+			path = SpacebridgeUITests;
+			sourceTree = "<group>";
+		};
+		F141D286237A0BAE004F5250 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F141D289237A0BE4004F5250 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F141D296237A118A004F5250 /* Main.storyboard */,
+				F141D25D237A0B4A004F5250 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F141D255237A0B45004F5250 /* Spacebridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F141D27C237A0B4B004F5250 /* Build configuration list for PBXNativeTarget "Spacebridge" */;
+			buildPhases = (
+				F141D252237A0B45004F5250 /* Sources */,
+				F141D253237A0B45004F5250 /* Frameworks */,
+				F141D254237A0B45004F5250 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spacebridge;
+			packageProductDependencies = (
+				F141D292237A0DDE004F5250 /* Socket */,
+			);
+			productName = Spacebridge;
+			productReference = F141D256237A0B45004F5250 /* Spacebridge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F141D267237A0B4B004F5250 /* SpacebridgeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F141D27F237A0B4B004F5250 /* Build configuration list for PBXNativeTarget "SpacebridgeTests" */;
+			buildPhases = (
+				F141D264237A0B4B004F5250 /* Sources */,
+				F141D265237A0B4B004F5250 /* Frameworks */,
+				F141D266237A0B4B004F5250 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F141D26A237A0B4B004F5250 /* PBXTargetDependency */,
+			);
+			name = SpacebridgeTests;
+			productName = SpacebridgeTests;
+			productReference = F141D268237A0B4B004F5250 /* SpacebridgeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F141D272237A0B4B004F5250 /* SpacebridgeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F141D282237A0B4B004F5250 /* Build configuration list for PBXNativeTarget "SpacebridgeUITests" */;
+			buildPhases = (
+				F141D26F237A0B4B004F5250 /* Sources */,
+				F141D270237A0B4B004F5250 /* Frameworks */,
+				F141D271237A0B4B004F5250 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F141D275237A0B4B004F5250 /* PBXTargetDependency */,
+			);
+			name = SpacebridgeUITests;
+			productName = SpacebridgeUITests;
+			productReference = F141D273237A0B4B004F5250 /* SpacebridgeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F141D24E237A0B45004F5250 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Hologram;
+				TargetAttributes = {
+					F141D255237A0B45004F5250 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					F141D267237A0B4B004F5250 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = F141D255237A0B45004F5250;
+					};
+					F141D272237A0B4B004F5250 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = F141D255237A0B45004F5250;
+					};
+				};
+			};
+			buildConfigurationList = F141D251237A0B45004F5250 /* Build configuration list for PBXProject "Spacebridge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F141D24D237A0B45004F5250;
+			packageReferences = (
+				F141D291237A0DDE004F5250 /* XCRemoteSwiftPackageReference "BlueSocket" */,
+			);
+			productRefGroup = F141D257237A0B45004F5250 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F141D255237A0B45004F5250 /* Spacebridge */,
+				F141D267237A0B4B004F5250 /* SpacebridgeTests */,
+				F141D272237A0B4B004F5250 /* SpacebridgeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F141D254237A0B45004F5250 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F141D25E237A0B4A004F5250 /* Assets.xcassets in Resources */,
+				F141D298237A118A004F5250 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F141D266237A0B4B004F5250 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F141D271237A0B4B004F5250 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F141D252237A0B45004F5250 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F141D28C237A0CC6004F5250 /* PortForwarder.swift in Sources */,
+				F141D25C237A0B45004F5250 /* ViewController.swift in Sources */,
+				F141D28D237A0CC6004F5250 /* KeyGen.swift in Sources */,
+				F141D25A237A0B45004F5250 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F141D264237A0B4B004F5250 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F141D26D237A0B4B004F5250 /* SpacebridgeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F141D26F237A0B4B004F5250 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F141D278237A0B4B004F5250 /* SpacebridgeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F141D26A237A0B4B004F5250 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F141D255237A0B45004F5250 /* Spacebridge */;
+			targetProxy = F141D269237A0B4B004F5250 /* PBXContainerItemProxy */;
+		};
+		F141D275237A0B4B004F5250 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F141D255237A0B45004F5250 /* Spacebridge */;
+			targetProxy = F141D274237A0B4B004F5250 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F141D296237A118A004F5250 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F141D297237A118A004F5250 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F141D27A237A0B4B004F5250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F141D27B237A0B4B004F5250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F141D27D237A0B4B004F5250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Spacebridge/Spacebridge.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4346UZW7T6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Spacebridge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.hologram.Spacebridge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F141D27E237A0B4B004F5250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Spacebridge/Spacebridge.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4346UZW7T6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Spacebridge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.hologram.Spacebridge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F141D280237A0B4B004F5250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4346UZW7T6;
+				INFOPLIST_FILE = SpacebridgeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = io.hologram.SpacebridgeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spacebridge.app/Contents/MacOS/Spacebridge";
+			};
+			name = Debug;
+		};
+		F141D281237A0B4B004F5250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4346UZW7T6;
+				INFOPLIST_FILE = SpacebridgeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = io.hologram.SpacebridgeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spacebridge.app/Contents/MacOS/Spacebridge";
+			};
+			name = Release;
+		};
+		F141D283237A0B4B004F5250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4346UZW7T6;
+				INFOPLIST_FILE = SpacebridgeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.hologram.SpacebridgeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Spacebridge;
+			};
+			name = Debug;
+		};
+		F141D284237A0B4B004F5250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4346UZW7T6;
+				INFOPLIST_FILE = SpacebridgeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.hologram.SpacebridgeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Spacebridge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F141D251237A0B45004F5250 /* Build configuration list for PBXProject "Spacebridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F141D27A237A0B4B004F5250 /* Debug */,
+				F141D27B237A0B4B004F5250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F141D27C237A0B4B004F5250 /* Build configuration list for PBXNativeTarget "Spacebridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F141D27D237A0B4B004F5250 /* Debug */,
+				F141D27E237A0B4B004F5250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F141D27F237A0B4B004F5250 /* Build configuration list for PBXNativeTarget "SpacebridgeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F141D280237A0B4B004F5250 /* Debug */,
+				F141D281237A0B4B004F5250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F141D282237A0B4B004F5250 /* Build configuration list for PBXNativeTarget "SpacebridgeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F141D283237A0B4B004F5250 /* Debug */,
+				F141D284237A0B4B004F5250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F141D291237A0DDE004F5250 /* XCRemoteSwiftPackageReference "BlueSocket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/IBM-Swift/BlueSocket";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.50;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F141D292237A0DDE004F5250 /* Socket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F141D291237A0DDE004F5250 /* XCRemoteSwiftPackageReference "BlueSocket" */;
+			productName = Socket;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F141D24E237A0B45004F5250 /* Project object */;
+}
