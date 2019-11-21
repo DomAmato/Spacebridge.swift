@@ -103,6 +103,7 @@
 		F141D258237A0B45004F5250 /* Spacebridge */ = {
 			isa = PBXGroup;
 			children = (
+				F1E27B552387527700FBF9F8 /* SSH */,
 				F141D290237A0D9C004F5250 /* Spacebridge.entitlements */,
 				F141D289237A0BE4004F5250 /* Resources */,
 				F141D259237A0B45004F5250 /* AppDelegate.swift */,
@@ -146,6 +147,13 @@
 				F141D25D237A0B4A004F5250 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		F1E27B552387527700FBF9F8 /* SSH */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SSH;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
