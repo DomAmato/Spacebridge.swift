@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F13459BD248C0DA00048CC2B /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F13459B6248C0D9E0048CC2B /* libcrypto.a */; };
+		F13459BE248C0DA00048CC2B /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F13459B7248C0D9E0048CC2B /* libssl.a */; };
+		F13459BF248C0DA00048CC2B /* libssh2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F13459B8248C0D9E0048CC2B /* libssh2.a */; };
+		F13459D2248C116B0048CC2B /* SSH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F13459CD248C10E90048CC2B /* SSH.framework */; };
+		F13459D3248C116B0048CC2B /* SSH.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F13459CD248C10E90048CC2B /* SSH.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F141D25A237A0B45004F5250 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F141D259237A0B45004F5250 /* AppDelegate.swift */; };
 		F141D25C237A0B45004F5250 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F141D25B237A0B45004F5250 /* ViewController.swift */; };
 		F141D25E237A0B4A004F5250 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F141D25D237A0B4A004F5250 /* Assets.xcassets */; };
@@ -14,11 +19,31 @@
 		F141D278237A0B4B004F5250 /* SpacebridgeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F141D277237A0B4B004F5250 /* SpacebridgeUITests.swift */; };
 		F141D28C237A0CC6004F5250 /* PortForwarder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F141D28A237A0CC5004F5250 /* PortForwarder.swift */; };
 		F141D28D237A0CC6004F5250 /* KeyGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F141D28B237A0CC6004F5250 /* KeyGen.swift */; };
-		F141D293237A0DDE004F5250 /* Socket in Frameworks */ = {isa = PBXBuildFile; productRef = F141D292237A0DDE004F5250 /* Socket */; };
 		F141D298237A118A004F5250 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F141D296237A118A004F5250 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F13459CC248C10E90048CC2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F13459C0248C10E70048CC2B /* SSH.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "SSH::SSH::Product";
+			remoteInfo = SSH;
+		};
+		F13459CE248C10E90048CC2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F13459C0248C10E70048CC2B /* SSH.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "Shout::Shout::Product";
+			remoteInfo = Shout;
+		};
+		F13459D0248C10E90048CC2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F13459C0248C10E70048CC2B /* SSH.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "Socket::Socket::Product";
+			remoteInfo = Socket;
+		};
 		F141D269237A0B4B004F5250 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F141D24E237A0B45004F5250 /* Project object */;
@@ -35,7 +60,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F13459D4248C116B0048CC2B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F13459D3248C116B0048CC2B /* SSH.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		F13459B6248C0D9E0048CC2B /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		F13459B7248C0D9E0048CC2B /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		F13459B8248C0D9E0048CC2B /* libssh2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssh2.a; sourceTree = "<group>"; };
+		F13459BA248C0D9E0048CC2B /* libssh2_sftp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libssh2_sftp.h; sourceTree = "<group>"; };
+		F13459BB248C0D9E0048CC2B /* libssh2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libssh2.h; sourceTree = "<group>"; };
+		F13459BC248C0D9E0048CC2B /* libssh2_publickey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libssh2_publickey.h; sourceTree = "<group>"; };
+		F13459C0248C10E70048CC2B /* SSH.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SSH.xcodeproj; sourceTree = "<group>"; };
 		F141D256237A0B45004F5250 /* Spacebridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spacebridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F141D259237A0B45004F5250 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F141D25B237A0B45004F5250 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +104,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F141D293237A0DDE004F5250 /* Socket in Frameworks */,
+				F13459BD248C0DA00048CC2B /* libcrypto.a in Frameworks */,
+				F13459BE248C0DA00048CC2B /* libssl.a in Frameworks */,
+				F13459BF248C0DA00048CC2B /* libssh2.a in Frameworks */,
+				F13459D2248C116B0048CC2B /* SSH.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,9 +128,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F13459B4248C0D9E0048CC2B /* SSH */ = {
+			isa = PBXGroup;
+			children = (
+				F13459C0248C10E70048CC2B /* SSH.xcodeproj */,
+				F13459B5248C0D9E0048CC2B /* Libraries */,
+				F13459B9248C0D9E0048CC2B /* Headers */,
+			);
+			path = SSH;
+			sourceTree = "<group>";
+		};
+		F13459B5248C0D9E0048CC2B /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				F13459B6248C0D9E0048CC2B /* libcrypto.a */,
+				F13459B7248C0D9E0048CC2B /* libssl.a */,
+				F13459B8248C0D9E0048CC2B /* libssh2.a */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		F13459B9248C0D9E0048CC2B /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				F13459BA248C0D9E0048CC2B /* libssh2_sftp.h */,
+				F13459BB248C0D9E0048CC2B /* libssh2.h */,
+				F13459BC248C0D9E0048CC2B /* libssh2_publickey.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		F13459C1248C10E70048CC2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F13459CD248C10E90048CC2B /* SSH.framework */,
+				F13459CF248C10E90048CC2B /* Shout.framework */,
+				F13459D1248C10E90048CC2B /* Socket.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		F141D24D237A0B45004F5250 = {
 			isa = PBXGroup;
 			children = (
+				F13459B4248C0D9E0048CC2B /* SSH */,
 				F141D258237A0B45004F5250 /* Spacebridge */,
 				F141D26B237A0B4B004F5250 /* SpacebridgeTests */,
 				F141D276237A0B4B004F5250 /* SpacebridgeUITests */,
@@ -103,7 +193,6 @@
 		F141D258237A0B45004F5250 /* Spacebridge */ = {
 			isa = PBXGroup;
 			children = (
-				F1E27B552387527700FBF9F8 /* SSH */,
 				F141D290237A0D9C004F5250 /* Spacebridge.entitlements */,
 				F141D289237A0BE4004F5250 /* Resources */,
 				F141D259237A0B45004F5250 /* AppDelegate.swift */,
@@ -149,13 +238,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		F1E27B552387527700FBF9F8 /* SSH */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SSH;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,6 +248,7 @@
 				F141D252237A0B45004F5250 /* Sources */,
 				F141D253237A0B45004F5250 /* Frameworks */,
 				F141D254237A0B45004F5250 /* Resources */,
+				F13459D4248C116B0048CC2B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -173,7 +256,6 @@
 			);
 			name = Spacebridge;
 			packageProductDependencies = (
-				F141D292237A0DDE004F5250 /* Socket */,
 			);
 			productName = Spacebridge;
 			productReference = F141D256237A0B45004F5250 /* Spacebridge.app */;
@@ -248,10 +330,15 @@
 			);
 			mainGroup = F141D24D237A0B45004F5250;
 			packageReferences = (
-				F141D291237A0DDE004F5250 /* XCRemoteSwiftPackageReference "BlueSocket" */,
 			);
 			productRefGroup = F141D257237A0B45004F5250 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F13459C1248C10E70048CC2B /* Products */;
+					ProjectRef = F13459C0248C10E70048CC2B /* SSH.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F141D255237A0B45004F5250 /* Spacebridge */,
@@ -260,6 +347,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F13459CD248C10E90048CC2B /* SSH.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SSH.framework;
+			remoteRef = F13459CC248C10E90048CC2B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F13459CF248C10E90048CC2B /* Shout.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Shout.framework;
+			remoteRef = F13459CE248C10E90048CC2B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F13459D1248C10E90048CC2B /* Socket.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Socket.framework;
+			remoteRef = F13459D0248C10E90048CC2B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F141D254237A0B45004F5250 /* Resources */ = {
@@ -392,12 +503,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/SSH/**";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/SSH/**";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -446,11 +559,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/SSH/**";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/SSH/**";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
@@ -464,10 +579,16 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4346UZW7T6;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Spacebridge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Spacebridge/SSH/Libraries",
+					"$(PROJECT_DIR)/SSH/Libraries",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.hologram.Spacebridge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -484,10 +605,16 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4346UZW7T6;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Spacebridge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Spacebridge/SSH/Libraries",
+					"$(PROJECT_DIR)/SSH/Libraries",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.hologram.Spacebridge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -619,25 +746,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		F141D291237A0DDE004F5250 /* XCRemoteSwiftPackageReference "BlueSocket" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/IBM-Swift/BlueSocket";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.50;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		F141D292237A0DDE004F5250 /* Socket */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F141D291237A0DDE004F5250 /* XCRemoteSwiftPackageReference "BlueSocket" */;
-			productName = Socket;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F141D24E237A0B45004F5250 /* Project object */;
 }

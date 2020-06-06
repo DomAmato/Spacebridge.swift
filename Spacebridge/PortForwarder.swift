@@ -49,7 +49,7 @@ class PortForwarder: NSObject {
         queue.async { [unowned self] in
             
             do {
-                // Create an socket...
+                // Create a socket...
                 try self.listenSocket = Socket.create()
                 
                 guard let socket = self.listenSocket else {
