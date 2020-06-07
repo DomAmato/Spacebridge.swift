@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F13459BD248C0DA00048CC2B /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F13459B6248C0D9E0048CC2B /* libcrypto.a */; };
-		F13459BE248C0DA00048CC2B /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F13459B7248C0D9E0048CC2B /* libssl.a */; };
-		F13459BF248C0DA00048CC2B /* libssh2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F13459B8248C0D9E0048CC2B /* libssh2.a */; };
 		F13459D2248C116B0048CC2B /* SSH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F13459CD248C10E90048CC2B /* SSH.framework */; };
 		F13459D3248C116B0048CC2B /* SSH.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F13459CD248C10E90048CC2B /* SSH.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F141D25A237A0B45004F5250 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F141D259237A0B45004F5250 /* AppDelegate.swift */; };
@@ -20,6 +17,13 @@
 		F141D28C237A0CC6004F5250 /* PortForwarder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F141D28A237A0CC5004F5250 /* PortForwarder.swift */; };
 		F141D28D237A0CC6004F5250 /* KeyGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F141D28B237A0CC6004F5250 /* KeyGen.swift */; };
 		F141D298237A118A004F5250 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F141D296237A118A004F5250 /* Main.storyboard */; };
+		F1608B20248C7A3A00078E5A /* Shout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F13459CF248C10E90048CC2B /* Shout.framework */; };
+		F1608B21248C7A3A00078E5A /* Socket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F13459D1248C10E90048CC2B /* Socket.framework */; };
+		F1608B29248C7BD400078E5A /* Socket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F13459D1248C10E90048CC2B /* Socket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F1608B2A248C7BD400078E5A /* Shout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F13459CF248C10E90048CC2B /* Shout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F1608B2B248C7BDB00078E5A /* libcrypto.a in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F13459B6248C0D9E0048CC2B /* libcrypto.a */; };
+		F1608B2C248C7BDC00078E5A /* libssl.a in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F13459B7248C0D9E0048CC2B /* libssl.a */; };
+		F1608B2D248C7BDC00078E5A /* libssh2.a in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F13459B8248C0D9E0048CC2B /* libssh2.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,13 @@
 			remoteGlobalIDString = F141D255237A0B45004F5250;
 			remoteInfo = Spacebridge;
 		};
+		F1DBD987248C96990093E0B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F13459C0248C10E70048CC2B /* SSH.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "Networking::Networking::Product";
+			remoteInfo = Networking;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -67,6 +78,11 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				F1608B2B248C7BDB00078E5A /* libcrypto.a in Embed Frameworks */,
+				F1608B2C248C7BDC00078E5A /* libssl.a in Embed Frameworks */,
+				F1608B2D248C7BDC00078E5A /* libssh2.a in Embed Frameworks */,
+				F1608B29248C7BD400078E5A /* Socket.framework in Embed Frameworks */,
+				F1608B2A248C7BD400078E5A /* Shout.framework in Embed Frameworks */,
 				F13459D3248C116B0048CC2B /* SSH.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -104,9 +120,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F13459BD248C0DA00048CC2B /* libcrypto.a in Frameworks */,
-				F13459BE248C0DA00048CC2B /* libssl.a in Frameworks */,
-				F13459BF248C0DA00048CC2B /* libssh2.a in Frameworks */,
+				F1608B20248C7A3A00078E5A /* Shout.framework in Frameworks */,
+				F1608B21248C7A3A00078E5A /* Socket.framework in Frameworks */,
 				F13459D2248C116B0048CC2B /* SSH.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,6 +176,7 @@
 		F13459C1248C10E70048CC2B /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				F1DBD988248C96990093E0B9 /* Networking.framework */,
 				F13459CD248C10E90048CC2B /* SSH.framework */,
 				F13459CF248C10E90048CC2B /* Shout.framework */,
 				F13459D1248C10E90048CC2B /* Socket.framework */,
@@ -304,7 +320,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1120;
-				LastUpgradeCheck = 1120;
+				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = Hologram;
 				TargetAttributes = {
 					F141D255237A0B45004F5250 = {
@@ -368,6 +384,13 @@
 			fileType = wrapper.framework;
 			path = Socket.framework;
 			remoteRef = F13459D0248C10E90048CC2B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F1DBD988248C96990093E0B9 /* Networking.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Networking.framework;
+			remoteRef = F1DBD987248C96990093E0B9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -503,14 +526,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/SSH/**";
+				HEADER_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/SSH/**";
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -559,13 +582,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/SSH/**";
+				HEADER_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/SSH/**";
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
@@ -578,18 +601,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4346UZW7T6;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Spacebridge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Spacebridge/SSH/Libraries",
-					"$(PROJECT_DIR)/SSH/Libraries",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = io.hologram.Spacebridge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -604,18 +623,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4346UZW7T6;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Spacebridge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Spacebridge/SSH/Libraries",
-					"$(PROJECT_DIR)/SSH/Libraries",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = io.hologram.Spacebridge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

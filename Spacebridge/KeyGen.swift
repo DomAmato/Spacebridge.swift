@@ -21,7 +21,7 @@ func createRSAKey() -> SecKey? {
     
     var error: Unmanaged<CFError>?
     guard let privateKey = SecKeyCreateRandomKey(attributes as CFDictionary, &error) else {
-        print(error)
+        print(error!)
         return nil
     }
     
@@ -43,7 +43,7 @@ func createDSAKey() -> SecKey? {
     
     var error: Unmanaged<CFError>?
     guard let privateKey = SecKeyCreateRandomKey(attributes as CFDictionary, &error) else {
-        print(error)
+        print(error!)
         return nil
     }
     

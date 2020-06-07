@@ -11,6 +11,15 @@
         }
       },
       {
+        "package": "Networking",
+        "repositoryURL": "https://github.com/3lvis/Networking.git",
+        "state": {
+          "branch": "master",
+          "revision": "232fcd7eb250f801082d64cc265dc5bd1af7192e",
+          "version": null
+        }
+      },
+      {
         "package": "Shout",
         "repositoryURL": "https://github.com/jakeheis/Shout.git",
         "state": {

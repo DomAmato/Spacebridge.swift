@@ -13,6 +13,11 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let keyField = NSSecureTextField()
+        keyField.frame = NSRect(x: self.view.frame.width/8, y: self.view.frame.height*0.5, width: self.view.frame.width*0.8, height: 24)
+        
+        self.view.addSubview(keyField)
+        
         // Do any additional setup after loading the view.
         let connectButton = NSButton(title: "Connect", target: self, action: #selector(createLocalSocketListener(_:)))
         connectButton.frame = NSRect(x: self.view.frame.width/4, y: self.view.frame.height*0.2, width: self.view.frame.width/2, height: 24)

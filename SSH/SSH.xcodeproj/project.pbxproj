@@ -1,0 +1,1025 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F11762C9248CA10400B8BDC1 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F11762C6248CA0EA00B8BDC1 /* libcrypto.a */; };
+		F11762CA248CA10400B8BDC1 /* libssh2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F11762C7248CA0EA00B8BDC1 /* libssh2.a */; };
+		F11762CB248CA10400B8BDC1 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F11762C8248CA0EA00B8BDC1 /* libssl.a */; };
+		OBJ_103 /* Agent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* Agent.swift */; };
+		OBJ_104 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* Channel.swift */; };
+		OBJ_105 /* FileAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* FileAttributes.swift */; };
+		OBJ_106 /* FilePermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* FilePermissions.swift */; };
+		OBJ_107 /* FileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* FileType.swift */; };
+		OBJ_108 /* ReadWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* ReadWrite.swift */; };
+		OBJ_109 /* SFTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* SFTP.swift */; };
+		OBJ_110 /* SSH.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* SSH.swift */; };
+		OBJ_111 /* SSHAuthMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* SSHAuthMethod.swift */; };
+		OBJ_112 /* SSHError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* SSHError.swift */; };
+		OBJ_113 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* Session.swift */; };
+		OBJ_115 /* Socket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Socket::Socket::Product" /* Socket.framework */; };
+		OBJ_122 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* Package.swift */; };
+		OBJ_127 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* Socket.swift */; };
+		OBJ_128 /* SocketProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* SocketProtocols.swift */; };
+		OBJ_129 /* SocketUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* SocketUtils.swift */; };
+		OBJ_136 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* Package.swift */; };
+		OBJ_59 /* FakeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* FakeRequest.swift */; };
+		OBJ_60 /* FormDataPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* FormDataPart.swift */; };
+		OBJ_61 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Helpers.swift */; };
+		OBJ_62 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* Image.swift */; };
+		OBJ_63 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* JSON.swift */; };
+		OBJ_64 /* NetworkActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* NetworkActivityIndicator.swift */; };
+		OBJ_65 /* Networking+HTTPRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* Networking+HTTPRequests.swift */; };
+		OBJ_66 /* Networking+Private.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Networking+Private.swift */; };
+		OBJ_67 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* Networking.swift */; };
+		OBJ_68 /* NetworkingResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* NetworkingResult.swift */; };
+		OBJ_69 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* Response.swift */; };
+		OBJ_70 /* TestCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* TestCheck.swift */; };
+		OBJ_77 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Package.swift */; };
+		OBJ_83 /* SSH.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* SSH.swift */; };
+		OBJ_85 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Networking::Networking::Product" /* Networking.framework */; };
+		OBJ_86 /* Shout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Shout::Shout::Product" /* Shout.framework */; };
+		OBJ_87 /* Socket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Socket::Socket::Product" /* Socket.framework */; };
+		OBJ_98 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F11762C1248CA0D000B8BDC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Networking::Networking";
+			remoteInfo = Networking;
+		};
+		F11762C2248CA0D000B8BDC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Shout::Shout";
+			remoteInfo = Shout;
+		};
+		F11762C3248CA0D000B8BDC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Socket::Socket";
+			remoteInfo = Socket;
+		};
+		F11762C4248CA0D000B8BDC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Socket::Socket";
+			remoteInfo = Socket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F11762C6248CA0EA00B8BDC1 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = Libraries/libcrypto.a; sourceTree = "<group>"; };
+		F11762C7248CA0EA00B8BDC1 /* libssh2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssh2.a; path = Libraries/libssh2.a; sourceTree = "<group>"; };
+		F11762C8248CA0EA00B8BDC1 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = Libraries/libssl.a; sourceTree = "<group>"; };
+		"Networking::Networking::Product" /* Networking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_13 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/dominicamato/OneDrive/Documents/Hologram/Spacebridge.swift/SSH/.build/checkouts/Networking/Package.swift; sourceTree = "<group>"; };
+		OBJ_14 /* FakeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeRequest.swift; sourceTree = "<group>"; };
+		OBJ_15 /* FormDataPart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormDataPart.swift; sourceTree = "<group>"; };
+		OBJ_16 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		OBJ_17 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		OBJ_18 /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		OBJ_19 /* NetworkActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkActivityIndicator.swift; sourceTree = "<group>"; };
+		OBJ_20 /* Networking+HTTPRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Networking+HTTPRequests.swift"; sourceTree = "<group>"; };
+		OBJ_21 /* Networking+Private.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Networking+Private.swift"; sourceTree = "<group>"; };
+		OBJ_22 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		OBJ_23 /* NetworkingResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingResult.swift; sourceTree = "<group>"; };
+		OBJ_24 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		OBJ_25 /* TestCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCheck.swift; sourceTree = "<group>"; };
+		OBJ_29 /* Agent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agent.swift; sourceTree = "<group>"; };
+		OBJ_30 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		OBJ_31 /* FileAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileAttributes.swift; sourceTree = "<group>"; };
+		OBJ_32 /* FilePermissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePermissions.swift; sourceTree = "<group>"; };
+		OBJ_33 /* FileType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileType.swift; sourceTree = "<group>"; };
+		OBJ_34 /* ReadWrite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadWrite.swift; sourceTree = "<group>"; };
+		OBJ_35 /* SFTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFTP.swift; sourceTree = "<group>"; };
+		OBJ_36 /* SSH.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSH.swift; sourceTree = "<group>"; };
+		OBJ_37 /* SSHAuthMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHAuthMethod.swift; sourceTree = "<group>"; };
+		OBJ_38 /* SSHError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHError.swift; sourceTree = "<group>"; };
+		OBJ_39 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		OBJ_40 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/dominicamato/OneDrive/Documents/Hologram/Spacebridge.swift/SSH/.build/checkouts/Shout/Package.swift; sourceTree = "<group>"; };
+		OBJ_43 /* Socket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
+		OBJ_44 /* SocketProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketProtocols.swift; sourceTree = "<group>"; };
+		OBJ_45 /* SocketUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketUtils.swift; sourceTree = "<group>"; };
+		OBJ_46 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/dominicamato/OneDrive/Documents/Hologram/Spacebridge.swift/SSH/.build/checkouts/BlueSocket/Package.swift; sourceTree = "<group>"; };
+		OBJ_52 /* Libraries */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Libraries; sourceTree = SOURCE_ROOT; };
+		OBJ_53 /* Headers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Headers; sourceTree = SOURCE_ROOT; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_9 /* SSH.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSH.swift; sourceTree = "<group>"; };
+		"SSH::SSH::Product" /* SSH.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SSH.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Shout::Shout::Product" /* Shout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Shout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Socket::Socket::Product" /* Socket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Socket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_114 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				F11762C9248CA10400B8BDC1 /* libcrypto.a in Frameworks */,
+				F11762CA248CA10400B8BDC1 /* libssh2.a in Frameworks */,
+				F11762CB248CA10400B8BDC1 /* libssl.a in Frameworks */,
+				OBJ_115 /* Socket.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_130 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_85 /* Networking.framework in Frameworks */,
+				OBJ_86 /* Shout.framework in Frameworks */,
+				OBJ_87 /* Socket.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F11762C5248CA0EA00B8BDC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F11762C6248CA0EA00B8BDC1 /* libcrypto.a */,
+				F11762C7248CA0EA00B8BDC1 /* libssh2.a */,
+				F11762C8248CA0EA00B8BDC1 /* libssl.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		OBJ_10 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_11 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_12 /* Networking */,
+				OBJ_26 /* Shout */,
+				OBJ_41 /* Socket 1.0.52 */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		OBJ_12 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_13 /* Package.swift */,
+				OBJ_14 /* FakeRequest.swift */,
+				OBJ_15 /* FormDataPart.swift */,
+				OBJ_16 /* Helpers.swift */,
+				OBJ_17 /* Image.swift */,
+				OBJ_18 /* JSON.swift */,
+				OBJ_19 /* NetworkActivityIndicator.swift */,
+				OBJ_20 /* Networking+HTTPRequests.swift */,
+				OBJ_21 /* Networking+Private.swift */,
+				OBJ_22 /* Networking.swift */,
+				OBJ_23 /* NetworkingResult.swift */,
+				OBJ_24 /* Response.swift */,
+				OBJ_25 /* TestCheck.swift */,
+			);
+			name = Networking;
+			path = .build/checkouts/Networking/Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_26 /* Shout */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_27 /* CSSH */,
+				OBJ_28 /* Shout */,
+				OBJ_40 /* Package.swift */,
+			);
+			name = Shout;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_27 /* CSSH */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CSSH;
+			path = .build/checkouts/Shout/Sources/CSSH;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_28 /* Shout */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_29 /* Agent.swift */,
+				OBJ_30 /* Channel.swift */,
+				OBJ_31 /* FileAttributes.swift */,
+				OBJ_32 /* FilePermissions.swift */,
+				OBJ_33 /* FileType.swift */,
+				OBJ_34 /* ReadWrite.swift */,
+				OBJ_35 /* SFTP.swift */,
+				OBJ_36 /* SSH.swift */,
+				OBJ_37 /* SSHAuthMethod.swift */,
+				OBJ_38 /* SSHError.swift */,
+				OBJ_39 /* Session.swift */,
+			);
+			name = Shout;
+			path = .build/checkouts/Shout/Sources/Shout;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_41 /* Socket 1.0.52 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_42 /* Socket */,
+				OBJ_46 /* Package.swift */,
+			);
+			name = "Socket 1.0.52";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_42 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_43 /* Socket.swift */,
+				OBJ_44 /* SocketProtocols.swift */,
+				OBJ_45 /* SocketUtils.swift */,
+			);
+			name = Socket;
+			path = .build/checkouts/BlueSocket/Sources/Socket;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"Networking::Networking::Product" /* Networking.framework */,
+				"SSH::SSH::Product" /* SSH.framework */,
+				"Socket::Socket::Product" /* Socket.framework */,
+				"Shout::Shout::Product" /* Shout.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_10 /* Tests */,
+				OBJ_11 /* Dependencies */,
+				OBJ_47 /* Products */,
+				OBJ_52 /* Libraries */,
+				OBJ_53 /* Headers */,
+				F11762C5248CA0EA00B8BDC1 /* Frameworks */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* SSH */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* SSH */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* SSH.swift */,
+			);
+			name = SSH;
+			path = Sources/SSH;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"Networking::Networking" /* Networking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_55 /* Build configuration list for PBXNativeTarget "Networking" */;
+			buildPhases = (
+				OBJ_58 /* Sources */,
+				OBJ_71 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Networking;
+			productName = Networking;
+			productReference = "Networking::Networking::Product" /* Networking.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Networking::SwiftPMPackageDescription" /* NetworkingPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_73 /* Build configuration list for PBXNativeTarget "NetworkingPackageDescription" */;
+			buildPhases = (
+				OBJ_76 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetworkingPackageDescription;
+			productName = NetworkingPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"SSH::SSH" /* SSH */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_79 /* Build configuration list for PBXNativeTarget "SSH" */;
+			buildPhases = (
+				OBJ_82 /* Sources */,
+				OBJ_84 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_88 /* PBXTargetDependency */,
+				OBJ_89 /* PBXTargetDependency */,
+				OBJ_91 /* PBXTargetDependency */,
+			);
+			name = SSH;
+			productName = SSH;
+			productReference = "SSH::SSH::Product" /* SSH.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"SSH::SwiftPMPackageDescription" /* SSHPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_94 /* Build configuration list for PBXNativeTarget "SSHPackageDescription" */;
+			buildPhases = (
+				OBJ_97 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SSHPackageDescription;
+			productName = SSHPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"Shout::Shout" /* Shout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_99 /* Build configuration list for PBXNativeTarget "Shout" */;
+			buildPhases = (
+				OBJ_102 /* Sources */,
+				OBJ_114 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_116 /* PBXTargetDependency */,
+			);
+			name = Shout;
+			productName = Shout;
+			productReference = "Shout::Shout::Product" /* Shout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Shout::SwiftPMPackageDescription" /* ShoutPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_118 /* Build configuration list for PBXNativeTarget "ShoutPackageDescription" */;
+			buildPhases = (
+				OBJ_121 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShoutPackageDescription;
+			productName = ShoutPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"Socket::Socket" /* Socket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_123 /* Build configuration list for PBXNativeTarget "Socket" */;
+			buildPhases = (
+				OBJ_126 /* Sources */,
+				OBJ_130 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Socket;
+			productName = Socket;
+			productReference = "Socket::Socket::Product" /* Socket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Socket::SwiftPMPackageDescription" /* SocketPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_132 /* Build configuration list for PBXNativeTarget "SocketPackageDescription" */;
+			buildPhases = (
+				OBJ_135 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocketPackageDescription;
+			productName = SocketPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "SSH" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_47 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"Networking::Networking" /* Networking */,
+				"Networking::SwiftPMPackageDescription" /* NetworkingPackageDescription */,
+				"SSH::SSH" /* SSH */,
+				"SSH::SwiftPMPackageDescription" /* SSHPackageDescription */,
+				"Shout::Shout" /* Shout */,
+				"Shout::SwiftPMPackageDescription" /* ShoutPackageDescription */,
+				"Socket::Socket" /* Socket */,
+				"Socket::SwiftPMPackageDescription" /* SocketPackageDescription */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_102 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_103 /* Agent.swift in Sources */,
+				OBJ_104 /* Channel.swift in Sources */,
+				OBJ_105 /* FileAttributes.swift in Sources */,
+				OBJ_106 /* FilePermissions.swift in Sources */,
+				OBJ_107 /* FileType.swift in Sources */,
+				OBJ_108 /* ReadWrite.swift in Sources */,
+				OBJ_109 /* SFTP.swift in Sources */,
+				OBJ_110 /* SSH.swift in Sources */,
+				OBJ_111 /* SSHAuthMethod.swift in Sources */,
+				OBJ_112 /* SSHError.swift in Sources */,
+				OBJ_113 /* Session.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_121 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_122 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_126 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_127 /* Socket.swift in Sources */,
+				OBJ_128 /* SocketProtocols.swift in Sources */,
+				OBJ_129 /* SocketUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_135 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_136 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_59 /* FakeRequest.swift in Sources */,
+				OBJ_60 /* FormDataPart.swift in Sources */,
+				OBJ_61 /* Helpers.swift in Sources */,
+				OBJ_62 /* Image.swift in Sources */,
+				OBJ_63 /* JSON.swift in Sources */,
+				OBJ_64 /* NetworkActivityIndicator.swift in Sources */,
+				OBJ_65 /* Networking+HTTPRequests.swift in Sources */,
+				OBJ_66 /* Networking+Private.swift in Sources */,
+				OBJ_67 /* Networking.swift in Sources */,
+				OBJ_68 /* NetworkingResult.swift in Sources */,
+				OBJ_69 /* Response.swift in Sources */,
+				OBJ_70 /* TestCheck.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_77 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_83 /* SSH.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_98 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_116 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Socket::Socket" /* Socket */;
+			targetProxy = F11762C3248CA0D000B8BDC1 /* PBXContainerItemProxy */;
+		};
+		OBJ_88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Networking::Networking" /* Networking */;
+			targetProxy = F11762C1248CA0D000B8BDC1 /* PBXContainerItemProxy */;
+		};
+		OBJ_89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Shout::Shout" /* Shout */;
+			targetProxy = F11762C2248CA0D000B8BDC1 /* PBXContainerItemProxy */;
+		};
+		OBJ_91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Socket::Socket" /* Socket */;
+			targetProxy = F11762C4248CA0D000B8BDC1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_100 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Shout/Sources/CSSH",
+					"$(SRCROOT)/Headers",
+				);
+				INFOPLIST_FILE = SSH.xcodeproj/Shout_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Libraries",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Shout;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Shout;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Shout/Sources/CSSH",
+					"$(SRCROOT)/Headers",
+				);
+				INFOPLIST_FILE = SSH.xcodeproj/Shout_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Libraries",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Shout;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Shout;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_119 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_120 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_124 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SSH.xcodeproj/Socket_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Socket;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Socket;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_125 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SSH.xcodeproj/Socket_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Socket;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Socket;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_133 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_134 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SSH.xcodeproj/Networking_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Networking;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = Networking;
+			};
+			name = Debug;
+		};
+		OBJ_57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SSH.xcodeproj/Networking_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Networking;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = Networking;
+			};
+			name = Release;
+		};
+		OBJ_74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 4.2.0";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		OBJ_75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 4.2.0";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		OBJ_80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Shout/Sources/CSSH",
+				);
+				INFOPLIST_FILE = SSH.xcodeproj/SSH_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SSH;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = SSH;
+			};
+			name = Debug;
+		};
+		OBJ_81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Shout/Sources/CSSH",
+				);
+				INFOPLIST_FILE = SSH.xcodeproj/SSH_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SSH;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = SSH;
+			};
+			name = Release;
+		};
+		OBJ_95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 4.2.0";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		OBJ_96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 4.2.0";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_118 /* Build configuration list for PBXNativeTarget "ShoutPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_119 /* Debug */,
+				OBJ_120 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_123 /* Build configuration list for PBXNativeTarget "Socket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_124 /* Debug */,
+				OBJ_125 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_132 /* Build configuration list for PBXNativeTarget "SocketPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_133 /* Debug */,
+				OBJ_134 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "SSH" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_55 /* Build configuration list for PBXNativeTarget "Networking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_56 /* Debug */,
+				OBJ_57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_73 /* Build configuration list for PBXNativeTarget "NetworkingPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_74 /* Debug */,
+				OBJ_75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_79 /* Build configuration list for PBXNativeTarget "SSH" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_80 /* Debug */,
+				OBJ_81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_94 /* Build configuration list for PBXNativeTarget "SSHPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_95 /* Debug */,
+				OBJ_96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_99 /* Build configuration list for PBXNativeTarget "Shout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_100 /* Debug */,
+				OBJ_101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
