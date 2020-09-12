@@ -9,6 +9,15 @@
           "revision": "f82e1401f04f62b2e8ce4670456d104466957810",
           "version": "1.0.50"
         }
+      },
+      {
+        "package": "Shout",
+        "repositoryURL": "https://github.com/jakeheis/Shout",
+        "state": {
+          "branch": null,
+          "revision": "65bf1d1d42e2fb0c47e4d78c0653ebb6d5de5cb5",
+          "version": "0.5.6"
+        }
       }
     ]
   },

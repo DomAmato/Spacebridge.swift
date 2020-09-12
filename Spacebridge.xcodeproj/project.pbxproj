@@ -16,6 +16,7 @@
 		F141D28D237A0CC6004F5250 /* KeyGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F141D28B237A0CC6004F5250 /* KeyGen.swift */; };
 		F141D293237A0DDE004F5250 /* Socket in Frameworks */ = {isa = PBXBuildFile; productRef = F141D292237A0DDE004F5250 /* Socket */; };
 		F141D298237A118A004F5250 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F141D296237A118A004F5250 /* Main.storyboard */; };
+		F24DC765250D8D600073AB7F /* Shout in Frameworks */ = {isa = PBXBuildFile; productRef = F24DC764250D8D600073AB7F /* Shout */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F24DC765250D8D600073AB7F /* Shout in Frameworks */,
 				F141D293237A0DDE004F5250 /* Socket in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,6 +168,7 @@
 			name = Spacebridge;
 			packageProductDependencies = (
 				F141D292237A0DDE004F5250 /* Socket */,
+				F24DC764250D8D600073AB7F /* Shout */,
 			);
 			productName = Spacebridge;
 			productReference = F141D256237A0B45004F5250 /* Spacebridge.app */;
@@ -241,6 +244,7 @@
 			mainGroup = F141D24D237A0B45004F5250;
 			packageReferences = (
 				F141D291237A0DDE004F5250 /* XCRemoteSwiftPackageReference "BlueSocket" */,
+				F24DC763250D8D600073AB7F /* XCRemoteSwiftPackageReference "Shout" */,
 			);
 			productRefGroup = F141D257237A0B45004F5250 /* Products */;
 			projectDirPath = "";
@@ -454,7 +458,7 @@
 				CODE_SIGN_ENTITLEMENTS = Spacebridge/Spacebridge.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 4346UZW7T6;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = Spacebridge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -474,7 +478,7 @@
 				CODE_SIGN_ENTITLEMENTS = Spacebridge/Spacebridge.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 4346UZW7T6;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = Spacebridge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -621,6 +625,14 @@
 				minimumVersion = 1.0.50;
 			};
 		};
+		F24DC763250D8D600073AB7F /* XCRemoteSwiftPackageReference "Shout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jakeheis/Shout";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.6;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -628,6 +640,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F141D291237A0DDE004F5250 /* XCRemoteSwiftPackageReference "BlueSocket" */;
 			productName = Socket;
+		};
+		F24DC764250D8D600073AB7F /* Shout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F24DC763250D8D600073AB7F /* XCRemoteSwiftPackageReference "Shout" */;
+			productName = Shout;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
